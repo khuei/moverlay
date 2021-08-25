@@ -7,14 +7,14 @@ inherit cargo
 
 if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/Z5483/todo-rs"
+	EGIT_REPO_URI="https://github.com/Z5483/tdr"
 else
 	KEYWORDS="~amd64"
-	SRC_URI="https://github.com/Z5483/todo-rs/archive/v${PV}.tar.gz -> ${P}.tar.gz $(cargo_crate_uris ${CRATES})"
+	SRC_URI="https://github.com/Z5483/tdr/archive/v${PV}.tar.gz -> ${P}.tar.gz $(cargo_crate_uris ${CRATES})"
 fi
 
 DESCRIPTION="Todo TUI written in Rust"
-HOMEPAGE="https://github.com/Z5483/todo-rs"
+HOMEPAGE="https://github.com/Z5483/tdr"
 
 LICENSE="MIT"
 SLOT="0"
